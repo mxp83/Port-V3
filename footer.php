@@ -24,19 +24,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<footer class="site-footer" id="colophon">
 
 					<div class="site-info">
-
-							<a href="<?php  echo esc_url( __( 'http://wordpress.org/','understrap' ) ); ?>"><?php printf( 
-							/* translators:*/
-							esc_html__( 'Proudly powered by %s', 'understrap' ),'WordPress' ); ?></a>
-								<span class="sep"> | </span>
-					
-							<?php printf( // WPCS: XSS ok.
-							/* translators:*/
-								esc_html__( 'Theme: %1$s by %2$s.', 'understrap' ), $the_theme->get( 'Name' ),  '<a href="'.esc_url( __('http://understrap.com', 'understrap')).'">understrap.com</a>' ); ?> 
-				
-							(<?php printf( // WPCS: XSS ok.
-							/* translators:*/
-								esc_html__( 'Version: %1$s', 'understrap' ), $the_theme->get( 'Version' ) ); ?>)
+						put social media stuff here.
 					</div><!-- .site-info -->
 
 				</footer><!-- #colophon -->
@@ -52,7 +40,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
-
 </body>
 
 </html>

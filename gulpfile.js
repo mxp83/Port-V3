@@ -18,7 +18,7 @@ var browserSyncWatchFiles = [
 // browser-sync options
 // see: https://www.browsersync.io/docs/options/
 var browserSyncOptions = {
-    proxy: "localhost/wordpress/",
+    proxy: "http://marcopayumo.dev",
     notify: false
 };
 
@@ -203,7 +203,8 @@ gulp.task('scripts', function() {
 
         // End - All BS4 stuff
 
-        basePaths.dev + 'js/skip-link-focus-fix.js'
+        basePaths.dev + 'js/skip-link-focus-fix.js',
+        basePaths.dev + 'js/jasny-bootstrap.js'
     ];
   gulp.src(scripts)
     .pipe(concat('theme.min.js'))
@@ -266,6 +267,14 @@ gulp.task('copy-assets', ['clean-source'], function() {
 // Copy Tether CSS files
     gulp.src(basePaths.node + 'tether/dist/css/*.css')
         .pipe(gulp.dest(basePaths.dev + '/css'));
+
+// Copy Jasny Bootstrap css files
+    gulp.src(basePaths.node + 'jasny-bootstrap/dist/css/*.css')
+        .pipe(gulp.dest(basePaths.dev + '/css'));
+
+// Copy Jasny Bootstrap js files
+    gulp.src(basePaths.node + 'jasny-bootstrap/dist/js/*.js')
+        .pipe(gulp.dest(basePaths.dev + '/js'));
     return stream;
 });
 

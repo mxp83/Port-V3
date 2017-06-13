@@ -50,5 +50,8 @@
     "run-sequence": "^1.2.2",
     "gulp-sequence": "^0.4.6",
     "undescores-for-npm": "^1.0.0"
+  },
+  "devDependencies": {
+    "jasny-bootstrap": "^3.1.3"
   }
 }
