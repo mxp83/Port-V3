@@ -22,8 +22,14 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<?php wp_head(); ?>
 </head>
-
-<body <?php body_class(); ?>>
+<?php if(is_front_page()) { ?>
+	<body <?php body_class(); ?>>
+		<video id="bgvid" playsinline autoplay muted loop>
+			<source src="<?php bloginfo('template_url') ?>/media/type.mp4" type="video/mp4">
+		</video>
+<?php } else { ?>
+	<body <?php body_class(); ?>>
+<?php } ?>
 
 <div class="hfeed site" id="page">
 
@@ -31,8 +37,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<div class="wrapper-fluid wrapper-navbar" id="wrapper-navbar">
 
 		<nav id="myNavmenu" class="navmenu navmenu-dark navmenu-fixed-left offcanvas" role="navigation">
-
-  			<a class="navmenu-brand" href="#">Brand</a>
+			<div class="d-flex justify-content-center">
+				<a class="navmenu-brand" href="/">marcopayumo.com</a>
+			</div>
+  			
 
 			<!-- The WordPress Menu goes here -->
 				<?php wp_nav_menu(
@@ -54,11 +62,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 		</button>
 		
 		<div class="title-bar-margin d-flex justify-content-center">
-			<?php if(is_front_page()) {
-					echo 'marcopayumo.com';
-				} else {
-					the_title();
-				}
+			<?php //if(is_front_page() || 'portfolio_cases' == get_post_type()) { ?>
+					<a class="navmenu-brand" href="/"><img src="<?php bloginfo(template_url); ?>/img/mp_3d.svg"></a>
+				<?php //}
 			?>
 		</div>
  

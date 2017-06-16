@@ -57,17 +57,17 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<p>I build my websites in responsive HTML5 and CSS3.  I can build your website from scratch, or if you like, build it from current frameworks like Foundation and Bootstrap.  I can also create Wordpress Templates.</p>
 			</div>
 		</div>
-
-		<div id="works" class="title-row row">
-			<div class="col-md-12">
-				<h3 class="entry-title">My Work</h3>
-			</div>
-		</div>
-
-		<?php custom_portfolio_cases(); ?>
-
+		
 	</div><!-- Container end -->
 
 </div><!-- Wrapper end -->
-
+	<div id="view_projects" class="container-fluid">
+		<div id="projects_title" class="title-row row">
+			<div class="col-md-12">
+				<h3 class="entry-title">My Projects</h3>
+				<p>See some of the work I've been a part of.</p>
+				<p><a href="/portfolio" class="btn-lg btn-front">Check it out</a></p>
+			</div>
+		</div>
+	</div>
 <?php get_footer(); ?>

@@ -8,10 +8,45 @@ body {
 		font-weight: 700;
 		color:#222;
 	}
+	a {
+		color:$brand-secondary;
+
+		&:hover {
+			color:$brand-primary;
+		}
+	}
 }
 .title-bar-margin {
 	padding:25px 20px;
 }
+
+.btn-front {
+	width: 100%;
+	max-width: 600px;
+	border: 4px solid $brand-secondary;
+	margin-bottom: 5vh;
+	background-color:transparent;
+	border-radius:30px;
+	text-transform: uppercase;
+	color:$brand-secondary;
+	font-size:1.2rem;
+	font-weight:bold;
+	display: inline-block;
+	text-align: center;
+	transition: 0.3s background-color ease-out;
+
+	&:hover {
+		text-decoration: none;
+		background-color:$brand-secondary;
+		color: white;
+	}
+}
+
+.entry-title {
+	text-align:center;
+}
+
+//navigation
 button.navbar-toggle {
 	margin:2vh 0 0 2vh;
 	padding:0;
@@ -52,12 +87,18 @@ button.navbar-toggle {
 	  border-top: 12.99px solid $brand-secondary;
 	}
 }
-.entry-title {
-	text-align:center;
-}
 .home {
-	background: #ccc;
-
+	video {
+		position:fixed;
+		min-width: 100%;
+		min-height: 100%;
+		top:50%;
+		left:50%;
+		width:auto;
+		height:auto;
+		z-index: -100;
+		transform: translateX(-50%) translateY(-50%);
+	}
 	p {
 		text-align:center;
 	}
@@ -65,6 +106,11 @@ button.navbar-toggle {
 		height: 80vh;
 	}
 	#full-width-page-wrapper {
+		color:#fff;
+
+		.entry-title {
+			color:#fff;
+		}
 	}
 	.entry-content {
 		text-align: center;
@@ -90,6 +136,9 @@ button.navbar-toggle {
 			color: white;
 		}
 	}
+	.understrap-read-more-link {
+		max-width:200px;
+	}
 	.skillbox {
 		text-align: center;
 
@@ -97,9 +146,36 @@ button.navbar-toggle {
 			font-size:5rem;
 		}
 	}
+	#view_projects {
+		background-color: #fff;
+		padding-top:25px;
+		padding-bottom: 25px;
+	}
 }
+//portfolio-case page
+.case_text {
+	padding: 1rem;
+
+	p.project_text {
+		height: 70px;
+		overflow:hidden;
+	}
+
+	.btn-front {
+		max-width: 280px;
+		margin: 0 auto;
+	}
+}
+//footer
 #wrapper-footer {
 	background-color:$brand-secondary;
+
+	.social-items {
+		a {
+			color:white !important;
+			font-size: 1.6rem;
+		}
+	}
 }
 //off canvas menu 
 .navmenu-dark {
