@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css?family=Lato:100,100i,700,700i,900,900i");
+@import url("https://fonts.googleapis.com/css?family=Lato:300,300i,700,700i,900,900i");
 @import url(../src/css/jasny-bootstrap.css);
 @keyframes fade-in {
   from {
@@ -9244,6 +9244,7 @@ h1.navbar-brand a:hover {
 
 body {
   font-family: "Lato", sans-serif;
+  font-weight: 300;
   color: #222; }
   body h1, body h2, body h3, body h4, body h5, body h6 {
     font-weight: 700;
