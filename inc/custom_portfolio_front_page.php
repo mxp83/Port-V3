@@ -16,23 +16,16 @@
 
     		$out .= '<div id="portfolio-cases" class="row">';
 
-    		$posttags = get_the_tags($item['ID']);
-    		
-	        foreach ( $recent as $item ) {
 
+	        foreach ( $recent as $item ) {
 	        		
 	        	if ( $odd == TRUE ) {
 		        	$out .= '<div class="case_img col-sm-12 col-md-6"><img class="img-fluid" src="';
 		        	$out .= get_field('laptop_image',$item['ID']);
 		            $out .= '" /></div><div class="case_text col-sm-12 col-md-6"><h5>';
 		            $out .= get_the_title($item['ID']);
-		            $out .= '</h5><p class="case_tags">';
-		            if($posttags) {
-		            	foreach($posttags as $tag) {
-		            		$out .= $tag->name . ' ';
-		            	}
-		            }
-		            $out .= '</p><p class="project_text">';
+		            $out .= '</h5>';
+		            $out .= '<p class="project_text">';
 		            $out .= get_field('project_text',$item['ID']);
 		            $out .= '</p>';
 		            if(get_field('external_url',$item['ID'])){
@@ -47,13 +40,8 @@
 		        	$out .= get_field('laptop_image',$item['ID']);
 		            $out .= '" /></div><div class="case_text col-sm-12 col-md-6 pull-md-6"><h5>';
 		            $out .= get_the_title($item['ID']);
-		            $out .= '</h5><p class="case_tags">';
-		            if($posttags) {
-		            	foreach($posttags as $tag) {
-		            		$out .= $tag->name . ' ';
-		            	}
-		            }
-		            $out .= '</p><p class="project_text">';
+		            $out .= '</h5>';
+		            $out .= '<p class="project_text">';
 		            $out .= get_field('project_text',$item['ID']);
 		            $out .= '</p>';
 		            if(get_field('external_url',$item['ID'])){
@@ -77,5 +65,5 @@
 
 	}
 
-	add_shortcode( 'recentposts', 'custom_recent_posts' );
+	add_shortcode( 'portfoliocases', 'custom_portfolio_cases' );
 ?>

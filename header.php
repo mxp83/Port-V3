@@ -31,6 +31,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<body <?php body_class(); ?>>
 <?php } ?>
 
+<?php include('inc/preloader.php'); ?>
 <div class="hfeed site" id="page">
 
 	<!-- ******************* The Navbar Area ******************* -->

@@ -1,5 +1,18 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Lato:100,100i,700,700i,900,900i");
+@import url(../src/css/jasny-bootstrap.css);
+@keyframes fade-in {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes fade-out {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 2; } }
+
 /*!
  * Bootstrap v4.0.0-alpha.6 (https://getbootstrap.com)
  * Copyright 2011-2017 The Bootstrap Authors
@@ -7,7 +20,6 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
-@import url(../src/css/jasny-bootstrap.css);
 html {
   font-family: sans-serif;
   line-height: 1.15;
@@ -9376,6 +9388,27 @@ button.navbar-toggle {
   .navmenu-dark .navmenu-nav > .active > a {
     color: white;
     background-color: #484848; }
+
+#loader-wrapper {
+  background: white;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 9999; }
+  #loader-wrapper #loader {
+    height: 100vh; }
+    #loader-wrapper #loader .loader-img {
+      width: 200px;
+      height: auto; }
+
+.fade-in-animation {
+  animation-name: fade-in;
+  animation-duration: 2s; }
+
+.fade-out-animation {
+  animation-name: fade-out;
+  animation-duration: 2s; }
 
 /*
 * Use existing Bootstrap 4 classes and

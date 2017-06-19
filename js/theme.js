@@ -6458,3 +6458,10 @@ if (typeof jQuery === 'undefined') { throw new Error('Jasny Bootstrap\'s JavaScr
   })
 
 }(window.jQuery);
+
+var $ = jQuery;
+
+//Preloader
+$(window).load(function(){
+	$('#loader-wrapper').addClass('fade-in-animation').delay(2500).css('display','none');
+});

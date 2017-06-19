@@ -14,3 +14,22 @@ $brand-primary:         #ffd47c;
 
 $brand-dark: #222;
 $brand-secondary: #64C7CC;
+
+
+//animation keyframes
+@keyframes fade-in {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+@keyframes fade-out {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 2;
+	}
+}
