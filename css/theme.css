@@ -9327,6 +9327,10 @@ button.navbar-toggle {
 
 .home #splashbox {
   height: 80vh; }
+  .home #splashbox article {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%); }
 
 .home #full-width-page-wrapper {
   color: #fff; }

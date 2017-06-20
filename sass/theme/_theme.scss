@@ -105,6 +105,12 @@ button.navbar-toggle {
 	}
 	#splashbox {
 		height: 80vh;
+
+		article {
+			position: relative;
+			top:50%;
+			transform: translateY(-50%);
+		}
 	}
 	#full-width-page-wrapper {
 		color:#fff;

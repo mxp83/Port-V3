@@ -62,7 +62,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<div class="hexagon d-flex justify-content-center align-items-center"><i class="fa fa-bars" aria-hidden="true"></i></div>
 		</button>
 		
-		<div class="title-bar-margin d-flex justify-content-center">
+		<div class="title-bar-margin text-center">
 			<?php //if(is_front_page() || 'portfolio_cases' == get_post_type()) { ?>
 					<a class="navmenu-brand" href="/"><img src="<?php bloginfo(template_url); ?>/img/mp_3d.svg"></a>
 				<?php //}

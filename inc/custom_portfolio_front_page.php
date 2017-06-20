@@ -29,9 +29,9 @@
 		            $out .= get_field('project_text',$item['ID']);
 		            $out .= '</p>';
 		            if(get_field('external_url',$item['ID'])){
-		            $out .= '<a target="_blank" class="btn btn-front d-flex justify-content-center" href="'. get_field('external_url',$item['ID']) . '">VIEW WEBSITE</a></p>';
+		            $out .= '<div class="text-center"><a target="_blank" class="btn btn-front text-center" href="'. get_field('external_url',$item['ID']) . '">VIEW WEBSITE</a></div></p>';
 		            } else {
-		            $out .= '<a class="btn btn-front d-flex justify-content-center" href="'. get_permalink( $item['ID'] ) . '">VIEW PROJECT</a></p>';
+		            $out .= '<div class="text-center"><a class="btn btn-front text-center" href="'. get_permalink( $item['ID'] ) . '">VIEW PROJECT</a></div></p>';
 		        	}
 		            $out .= '</div>';
 		            $odd = FALSE;
@@ -45,9 +45,9 @@
 		            $out .= get_field('project_text',$item['ID']);
 		            $out .= '</p>';
 		            if(get_field('external_url',$item['ID'])){
-		            $out .= '<a target="_blank" class="btn btn-front d-flex justify-content-center" href="'. get_field('external_url',$item['ID']) . '">VIEW WEBSITE</a></p>';
+		            $out .= '<div class="text-center"><a target="_blank" class="btn btn-front text-center" href="'. get_field('external_url',$item['ID']) . '">VIEW WEBSITE</a></div></p>';
 		            } else {
-		            $out .= '<a class="btn btn-front d-flex justify-content-center" href="'. get_permalink( $item['ID'] ) . '">VIEW PROJECT</a></p>';
+		            $out .= '<div class="text-center"><a class="btn btn-front text-center" href="'. get_permalink( $item['ID'] ) . '">VIEW PROJECT</a></div></p>';
 		        	}
 		            $out .= '</div>';
 		            $odd = TRUE;

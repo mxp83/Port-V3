@@ -6,7 +6,7 @@
  */
 
 ?>
-<div id="splashbox" class="d-flex align-items-center justify-content-center">
+<div id="splashbox" class="text-center">
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
 	<header class="entry-header">
