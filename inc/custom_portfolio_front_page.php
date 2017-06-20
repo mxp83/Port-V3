@@ -29,7 +29,7 @@
 		            $out .= get_field('project_text',$item['ID']);
 		            $out .= '</p>';
 		            if(get_field('external_url',$item['ID'])){
-		            $out .= '<a class="btn btn-front d-flex justify-content-center" href="'. get_field('external_url') . '">VIEW WEBSITE</a></p>';
+		            $out .= '<a target="_blank" class="btn btn-front d-flex justify-content-center" href="'. get_field('external_url',$item['ID']) . '">VIEW WEBSITE</a></p>';
 		            } else {
 		            $out .= '<a class="btn btn-front d-flex justify-content-center" href="'. get_permalink( $item['ID'] ) . '">VIEW PROJECT</a></p>';
 		        	}
@@ -45,7 +45,7 @@
 		            $out .= get_field('project_text',$item['ID']);
 		            $out .= '</p>';
 		            if(get_field('external_url',$item['ID'])){
-		            $out .= '<a class="btn btn-front d-flex justify-content-center" href="'. get_field('external_url') . '">VIEW WEBSITE</a></p>';
+		            $out .= '<a target="_blank" class="btn btn-front d-flex justify-content-center" href="'. get_field('external_url',$item['ID']) . '">VIEW WEBSITE</a></p>';
 		            } else {
 		            $out .= '<a class="btn btn-front d-flex justify-content-center" href="'. get_permalink( $item['ID'] ) . '">VIEW PROJECT</a></p>';
 		        	}

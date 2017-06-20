@@ -66,7 +66,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<div class="col-md-12">
 				<h3 class="entry-title">My Projects</h3>
 				<p>See some of the work I've been a part of.</p>
-				<p><a href="/portfolio" class="btn-lg btn-front">Check it out</a></p>
+				<p><a href="/projects" class="btn-lg btn-front">Check it out</a></p>
 			</div>
 		</div>
 	</div>
