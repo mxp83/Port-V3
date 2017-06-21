@@ -11,7 +11,7 @@ get_header();
 $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
-<div class="wrapper d-flex justify-content-center align-items-center" id="full-width-page-wrapper">
+<div class="wrapper text-center" id="full-width-page-wrapper">
 
 	<div class="<?php echo esc_attr( $container ); ?>" id="content">
 

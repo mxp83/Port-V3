@@ -9375,7 +9375,6 @@ button.navbar-toggle {
 .case_text {
   padding: 1rem; }
   .case_text p.project_text {
-    height: 70px;
     overflow: hidden; }
   .case_text .btn-front {
     max-width: 280px;
